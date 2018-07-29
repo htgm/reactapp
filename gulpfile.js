@@ -1,23 +1,14 @@
 const gulp = require('gulp');
 const spawn = require('child_process').spawn;
 
-let server;
-gulp.task('server', () => {
-
-  if (server) {
+gulp.task('default', () => {
+  function goserver() {
+    return spawn('node', ['src/server/server.js'], { stdio: 'inherit' });
+  }
+  spawn('npm', ['run', 'start'], { stdio: 'inherit' });
+  let server = goserver();
+  gulp.watch('src/server/*.js', () => {
     server.kill('SIGKILL');
-  }
-  else {
-    gulp.watch('src/*.js', ['server']);
-  }
-
-
-  server = null;
-  spawn('npm', ['run', 'build'], { stdio: 'inherit' })
-    .on('exit', code => {
-      if (code === 0) {
-        server = spawn('node', ['src/server.js'], { stdio: 'inherit' });
-      }
-    });
-
+    server = goserver();
+  });
 });

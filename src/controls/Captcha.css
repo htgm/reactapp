@@ -1,0 +1,12 @@
+.Captcha-div {
+  border: 0;
+  padding: 0;
+  display: inline-block;
+}
+.Captcha {
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid #777;
+  cursor: pointer;
+  margin: 0;
+  display: block;
+}
