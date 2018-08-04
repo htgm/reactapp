@@ -3,6 +3,7 @@ import Input from '../controls/Input';
 import Captcha from '../controls/Captcha';
 import './Form.css';
 import MessageBox from './MessageBox';
+import ButtonPane from '../controls/ButtonPane';
 
 export default class RegisterForm extends Component {
 
@@ -47,9 +48,10 @@ export default class RegisterForm extends Component {
         <div><Input ref="password" type="password" onChange={this.onPwChange}/></div>
         <p>captcha</p>
         <div><Captcha ref="captcha" onChange={this.captchaAlertTest}/></div>
-        <hr/>
-        <button>register</button>
-        <button onClick={this.openmsgbox}>msgbox</button>
+        <ButtonPane>
+          <button className="default">register</button>
+          <button onClick={this.openmsgbox}>msgbox</button>
+        </ButtonPane>
         <MessageBox ref="msgbox" ok="Ok" cancel="Cancel">QWERTY</MessageBox>
       </div>
     );
