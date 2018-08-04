@@ -1,0 +1,10 @@
+div.TitlePane {
+  border-bottom: 2px groove #ddd;
+  display: block;
+  font-size: larger;
+  font-weight: bolder;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  user-select: none;
+  text-align: left;
+}

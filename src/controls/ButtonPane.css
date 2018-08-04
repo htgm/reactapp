@@ -3,10 +3,8 @@ div.ButtonPane {
   display: block;
   text-align: right;
   margin-top: 8px;
-}
-.ButtonPane div.group {
-  display: inline-block;
-  margin-top: 4px;
+  padding-top: 4px;
+  user-select: none;
 }
 
 .ButtonPane button {

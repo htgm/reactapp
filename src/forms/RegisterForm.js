@@ -3,6 +3,7 @@ import Input from '../controls/Input';
 import Captcha from '../controls/Captcha';
 import './Form.css';
 import MessageBox from './MessageBox';
+import TitlePane from '../controls/TitlePane';
 import ButtonPane from '../controls/ButtonPane';
 
 export default class RegisterForm extends Component {
@@ -41,7 +42,8 @@ export default class RegisterForm extends Component {
 
   render() {
     return (
-      <div style={{ textAlign: "left" }}>
+      <div>
+        <TitlePane>Welcome</TitlePane>
         <p>user id</p>
         <div><Input ref="userId" className="myinput" onChange={this.onUidChange}/></div>
         <p>password</p>

@@ -7,7 +7,7 @@ export default class ButtonPane extends Component {
   render() {
     return (
       <div className="ButtonPane">
-        <div className="group">
+        <div style={{ display: 'inline-block' }}>
           {this.props.children}
         </div>
       </div>
