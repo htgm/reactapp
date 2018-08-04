@@ -45,7 +45,7 @@ export default class RegisterForm extends Component {
       <div>
         <TitlePane>Welcome</TitlePane>
         <p>user id</p>
-        <div><Input ref="userId" className="myinput" onChange={this.onUidChange}/></div>
+        <div><Input ref="userId" onChange={this.onUidChange}/></div>
         <p>password</p>
         <div><Input ref="password" type="password" onChange={this.onPwChange}/></div>
         <p>captcha</p>

@@ -16,10 +16,10 @@ export default class Input extends Component {
     let xclass = this.props.className, alertbox = <div ref="alert" className="alert"/>;
     let a = this.state.alert;
     if (a && a !== 'none' && this.state.alertText) {
-      if (a === 'err' || a === 'error') {
-        a = 'err';
-        xclass += " err-back";
-      }
+//      if (a === 'err' || a === 'error') {
+//        a = 'err';
+//        xclass += " err-back";
+//      }
       alertbox = <div ref="alert" className={`alert show ${a}-back ${a}-text`}>{this.state.alertText}</div>;
     }
     return (

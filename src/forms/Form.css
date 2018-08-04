@@ -1,22 +1,18 @@
-input.myinput {
-  background-color: aqua;
-}
-
 .form-frame {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-  min-width: 50%;
+  min-width: 40%;
   border-radius: 8px;
-  border: 2px solid #fff;
+  border: 2px solid #ffc;
   text-align: left;
   color: white;
   display: inline-block;
   padding: 20px;
   text-shadow: 0px 0px 2px rgba(255,255,255,0.6);
-  box-shadow: 0px 0px 20px 0px #fff;
-  background: radial-gradient(ellipse farthest-corner at top left, #333 0%, #000 80%);
+  box-shadow: 0px 0px 20px 0px #ffc;
+  background: radial-gradient(ellipse farthest-corner at top left, #666 0%, #333 80%);
 }
 .modal-overlay {
   position: fixed;
@@ -25,4 +21,29 @@ input.myinput {
   right: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.5);
+}
+
+.Input
+input:not([type]),
+input[type="text" i],
+input[type="email" i],
+input[type="number" i],
+input[type="password" i],
+input[type="tel" i],
+input[type="url" i]
+{
+  border: 1px solid #ffc;
+  border-radius: 2px 2px 2px 2px;
+  padding: 2px;
+  font-size: larger;
+  background-color: #000;
+  color: #fff;
+}
+*:focus {
+  outline: 0;
+  box-shadow: 0px 0px 12px 0px #ffc;
+}
+
+button {
+  background-color: #700;
 }
