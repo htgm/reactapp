@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Input from '../controls/Input';
 import Captcha from '../controls/Captcha';
-import './Form.css';
 import MessageBox from './MessageBox';
 import TitlePane from '../controls/TitlePane';
 import ButtonPane from '../controls/ButtonPane';
+
 
 export default class RegisterForm extends Component {
 

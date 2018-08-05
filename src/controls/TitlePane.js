@@ -1,15 +1,7 @@
-import React, { Component } from 'react';
-import './TitlePane.css';
+import React from 'react';
 
-
-export default class TitlePane extends Component {
-
-  render() {
-    return (
-      <div className="TitlePane">
-        {this.props.children}
-      </div>
-    );
-  }
-
-}
+export default (props) => (
+  <div className="TitlePane">
+    {props.children}
+  </div>
+);

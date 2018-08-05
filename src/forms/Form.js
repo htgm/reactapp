@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
+import '../controls/default.css'
 import './Form.css';
 
 export default class Form extends Component {

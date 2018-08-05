@@ -1,17 +1,9 @@
-import React, { Component } from 'react';
-import './ButtonPane.css';
+import React from 'react';
 
-
-export default class ButtonPane extends Component {
-
-  render() {
-    return (
-      <div className="ButtonPane">
-        <div style={{ display: 'inline-block' }}>
-          {this.props.children}
-        </div>
-      </div>
-    );
-  }
-
-}
+export default (props) => (
+  <div className="ButtonPane">
+    <div style={{ display: 'inline-block' }}>
+      {props.children}
+    </div>
+  </div>
+);

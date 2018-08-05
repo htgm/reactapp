@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Modal from 'react-modal';
-import Form from './forms/Form'
 import RegisterForm from './forms/RegisterForm';
+import Form from './forms/Form'
 
 Modal.setAppElement('#root');
 
