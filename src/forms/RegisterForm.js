@@ -5,6 +5,7 @@ import MessageBox from './MessageBox';
 import TitlePane from '../controls/TitlePane';
 import ButtonPane from '../controls/ButtonPane';
 import Container from '../controls/Container';
+import Form from '../controls/Form';
 
 
 export default class RegisterForm extends Component {
@@ -43,7 +44,7 @@ export default class RegisterForm extends Component {
 
   render() {
     return (
-      <div>
+      <Form opened={this.props.opened} {...this.props}>
         <TitlePane>Welcome</TitlePane>
         <Container>
         <div>
@@ -64,7 +65,7 @@ export default class RegisterForm extends Component {
           <button onClick={this.openmsgbox}>msgbox</button>
         </ButtonPane>
         <MessageBox ref="msgbox" ok="Ok" cancel="Cancel">QWERTY</MessageBox>
-      </div>
+      </Form>
     );
   }
 }
