@@ -3,7 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import Modal from 'react-modal';
 import RegisterForm from './forms/RegisterForm';
-import Form from './forms/Form'
+import Form from './controls/Form'
+import './controls/default.css'
+import './myapp.css'
 
 Modal.setAppElement('#root');
 

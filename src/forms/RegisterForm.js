@@ -4,6 +4,7 @@ import Captcha from '../controls/Captcha';
 import MessageBox from './MessageBox';
 import TitlePane from '../controls/TitlePane';
 import ButtonPane from '../controls/ButtonPane';
+import Container from '../controls/Container';
 
 
 export default class RegisterForm extends Component {
@@ -44,12 +45,20 @@ export default class RegisterForm extends Component {
     return (
       <div>
         <TitlePane>Welcome</TitlePane>
-        <p>user id</p>
-        <div><Input ref="userId" onChange={this.onUidChange}/></div>
-        <p>password</p>
-        <div><Input ref="password" type="password" onChange={this.onPwChange}/></div>
-        <p>captcha</p>
-        <div><Captcha ref="captcha" onChange={this.captchaAlertTest}/></div>
+        <Container>
+        <div>
+          <p>user id</p>
+          <div><Input ref="userId" onChange={this.onUidChange}/></div>
+        </div>
+        <div>
+          <p>password</p>
+          <div><Input ref="password" type="password" onChange={this.onPwChange}/></div>
+        </div>
+        <div>
+          <p>captcha</p>
+          <div><Captcha ref="captcha" onChange={this.captchaAlertTest}/></div>
+        </div>
+        </Container>
         <ButtonPane>
           <button className="default">register</button>
           <button onClick={this.openmsgbox}>msgbox</button>

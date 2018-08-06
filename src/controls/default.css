@@ -10,7 +10,7 @@ div.TitlePane {
   display: block;
   font-size: larger;
   font-weight: bolder;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   padding-bottom: 4px;
   user-select: none;
   text-align: left;
@@ -21,7 +21,6 @@ div.TitlePane {
 div.ButtonPane {
   border-top: 2px groove #ddd;
   display: block;
-  text-align: right;
   margin-top: 8px;
   padding-top: 4px;
   user-select: none;
