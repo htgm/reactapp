@@ -1,8 +1,7 @@
 /* common */
 
-/* Form */
-div.Form {
-  background-color: #fff;
+/* Frame */
+div.Frame {
 	border: 1px solid black;
 	border-radius: 8px;
 	padding: 16px;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Form from '../controls/Form';
+import Frame from '../controls/Frame';
 import TitlePane from '../controls/TitlePane';
 import ButtonPane from '../controls/ButtonPane';
 import Container from '../controls/Container';
@@ -14,7 +14,7 @@ export default class BigForm extends Component {
 
   render() {
     return (
-      <Form opened={this.props.opened || this.state.opened}>
+      <Frame opened={this.props.opened || this.state.opened}>
         <TitlePane>Title</TitlePane>
         <Container>
 
@@ -58,7 +58,7 @@ export default class BigForm extends Component {
           <button>Cancel</button>
           <button>Ok</button>
         </ButtonPane>
-      </Form>
+      </Frame>
     );
   }
 

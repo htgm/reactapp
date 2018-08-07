@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Input from '../controls/Input';
 import Captcha from '../controls/Captcha';
-import MessageBox from './MessageBox';
+import Frame from '../controls/Frame';
 import TitlePane from '../controls/TitlePane';
 import ButtonPane from '../controls/ButtonPane';
 import Container from '../controls/Container';
-import Form from '../controls/Form';
+import MessageBox from './MessageBox';
 
 
 export default class RegisterForm extends Component {
@@ -44,7 +44,7 @@ export default class RegisterForm extends Component {
 
   render() {
     return (
-      <Form {...this.props}>
+      <Frame {...this.props}>
         <TitlePane>Welcome</TitlePane>
         <Container>
         <div>
@@ -65,7 +65,7 @@ export default class RegisterForm extends Component {
           <button onClick={this.openmsgbox}>msgbox</button>
         </ButtonPane>
         <MessageBox ref="msgbox" ok="Ok" cancel="Cancel">QWERTY</MessageBox>
-      </Form>
+      </Frame>
     );
   }
 }

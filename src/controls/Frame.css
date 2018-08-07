@@ -1,4 +1,4 @@
-div.Form-modal-overlay {
+div.Frame-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,16 +9,18 @@ div.Form-modal-overlay {
   justify-content: center;
   align-items: center
 }
-div.Form-modal {
+div.Frame-modal {
   background-color: transparent;
 	min-width: 50%;
 	max-height: 100%;
 	display: inline-block;
 	box-sizing: border-box;
 }
-div.Form {
+div.Frame {
 	display: flex;
 	flex-direction: column;
 	max-height: 100%;
-	box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+  background-color: revert;
 }
