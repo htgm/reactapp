@@ -11,6 +11,10 @@ Modal.setAppElement('#root');
 
 class App extends Component {
 
+  openbigform = () => {
+    this.refs.bigform.open()
+  }
+
   render() {
     return (
       <div className="App">
@@ -22,7 +26,8 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <RegisterForm/>
-        <BigForm opened/>
+        <BigForm ref="bigform"/>
+        <button onClick={this.openbigform}>open bigform</button>
       </div>
     );
   }
