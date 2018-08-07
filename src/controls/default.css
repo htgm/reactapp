@@ -40,17 +40,19 @@ div.ButtonPane > div {
   background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%, transparent 100%);
   border: 1px solid #777;
   user-select: none;
+  background-color: #ddd;
 }
 .ButtonPane button.default {
   font-weight: bolder;
 }
-.ButtonPane button:hover {
-  background-color: #333;
-}
-.ButtonPane button:hover.default {
-  background-color: goldenrod;
+.ButtonPane button:hover,
+.ButtonPane button:hover.default,
+.ButtonPane button:active,
+.ButtonPane button:active.default {
+  background-color: #eee;
 }
 .ButtonPane button:active,
 .ButtonPane button:active.default {
   background: linear-gradient(to bottom, transparent 0%, rgba(255,255,255,0.7) 100%);
+  background-color: #eee;
 }
