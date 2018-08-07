@@ -1,5 +1,8 @@
 div.Container {
 	display: flex;
-  overflow-y: scroll;
-  flex-direction: column;
+  overflow-y: auto;
+/*  flex-direction: column;*/
+  flex-wrap: wrap;
+}
+div.Container > div {
 }

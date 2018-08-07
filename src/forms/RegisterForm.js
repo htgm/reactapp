@@ -44,7 +44,7 @@ export default class RegisterForm extends Component {
 
   render() {
     return (
-      <Form opened={this.props.opened} {...this.props}>
+      <Form {...this.props}>
         <TitlePane>Welcome</TitlePane>
         <Container>
         <div>

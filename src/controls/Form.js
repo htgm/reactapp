@@ -4,16 +4,11 @@ import './Form.css';
 
 export default class Form extends Component {
 
-  state = {};
-
-  open() {
-    this.setState({ opened: true });
-  }
-
   render() {
+    // TODO: i don't know why need to fix 'max-height' manually on react
     const maxHeightFix = { maxHeight: window.innerHeight + 'px' };
     return (
-      <Modal className="Form-modal" overlayClassName="Form-modal-overlay" isOpen={this.state.opened || this.props.opened} {...this.props}>
+      <Modal className="Form-modal" overlayClassName="Form-modal-overlay" isOpen={this.props.opened} {...this.props}>
         <div className="Form" style={maxHeightFix}>
           {this.props.children}
         </div>
