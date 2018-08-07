@@ -17,7 +17,7 @@ export default class BigForm extends Component {
       <Form opened={this.props.opened || this.state.opened}>
         <TitlePane>Title</TitlePane>
         <Container>
-        <div>
+<div>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non sem urna. Nam ac diam vel velit congue venenatis. Phasellus interdum sapien et odio pellentesque, ac pellentesque lacus pharetra. Proin a metus iaculis, molestie ligula non, accumsan nulla. Maecenas ut nibh et ipsum faucibus accumsan nec eget eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc a elit lobortis, eleifend sem blandit, aliquam lorem. Ut ullamcorper diam eu orci pretium, nec luctus dui lobortis. Maecenas tortor libero, malesuada in varius et, eleifend nec lorem. Integer sed nibh ipsum. Praesent tortor mauris, viverra eget diam sed, iaculis sagittis lorem.
 </div>
 

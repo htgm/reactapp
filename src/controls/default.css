@@ -27,6 +27,10 @@ div.ButtonPane {
   padding-top: 4px;
   user-select: none;
 }
+div.ButtonPane > div {
+  display: flex;
+  justify-content: flex-end;
+}
 .ButtonPane button,
 .ButtonPane button.default {
   margin: 4px;

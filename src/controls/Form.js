@@ -11,9 +11,10 @@ export default class Form extends Component {
   }
 
   render() {
+    const maxHeightFix = { maxHeight: window.innerHeight + 'px' };
     return (
       <Modal className="Form-modal" overlayClassName="Form-modal-overlay" isOpen={this.state.opened || this.props.opened} {...this.props}>
-        <div className="Form">
+        <div className="Form" style={maxHeightFix}>
           {this.props.children}
         </div>
       </Modal>
