@@ -1,8 +1,12 @@
 div.Container {
-	display: flex;
-  overflow-y: auto;
+/*	display: flex;*/
 /*  flex-direction: column;*/
-  flex-wrap: wrap;
+/*  flex-wrap: wrap;*/
+  column-width: 400px;
+  column-rule: 2px dotted black;
+  overflow-y: auto;
 }
 div.Container > div {
+  break-inside: avoid-column;
+/*  max-width: 100%;*/
 }
